@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+        var counter = 0;
+
+        $(document).ready(function(){
+            $("img").hide();
+            $("Image1").show();
+
+            $("button").click(function(){
+                switch (counter)
+                {
+                    case 0:
+                        $("img").hide(1000);
+                        $("Image2").show(1000);
+                        counter += 1;
+                        break;
+                    case 1:
+                        $("img").hide(1000);
+                        $("Image3").show(1000);
+                        counter += 1;
+                        break;
+                    case 2:
+                        $("img").hide(1000);
+                        $("Image4").show(1000);
+                        counter += 1;
+                        break;
+		    case 3:
+                        $("img").hide(1000);
+                        $("Image1").show(1000);
+                        counter = 0;
+                        break;
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <div style="height: 300px; width: 256px; margin: auto; margin-top: 10%;">
+        <img class="Image1" src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width: 300px; height: 300px;">
+        <img class="Image2" src="https://media.istockphoto.com/photos/male-it-specialist-holds-laptop-and-discusses-work-with-female-server-picture-id943067460?b=1&k=20&m=943067460&s=612x612&w=0&h=111IgOfD8O9EajHIlZrwIixIP_Kwp0tVREpWh-M2vEI=" style="width: 300px; height: 300px;">
+        <img class="Image3" src="https://cdn.gobankingrates.com/wp-content/uploads/2015/09/MAIN-stock-investing-desk-g-stockstudio-shutterstock_534464659.jpg?quality=75&w=1800" style="width: 300px; height: 300px;">
+        <img class="Image4" src="https://www.bankrate.com/2022/04/29150152/Best-performing-stocks.jpeg?auto=webp&optimize=high&crop=16:9" style="width: 300px; height: 300px;">
+    </div>
+    <div style="height: 50px; width: 200px; margin: auto;">
+        <button>Change Image</button>
+        <p><a href="index.html">Back</a></p>
+    </div>
+</body>
+</html>
